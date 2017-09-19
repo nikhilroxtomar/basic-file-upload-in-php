@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style type="text/css">
+  body{
+    font-family: sans-serif;
+  }
+  .upload-form{
+    background: #f2f2f2;
+    width: 400px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  input[type="file"]{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  button[type="submit"]{
+    background: #333;
+    border: 1px solid #333;
+    padding: 10px 30px;
+    margin-top: 10px;
+    color: #fff;
+    border-radius: 5px;
+  }
+  button[type="submit"]:hover{
+    cursor: pointer;
+  }
+  </style>
+</head>
+
+<body>
+
+<div class="upload-form">
+  <h2>BASIC FILE UPLOAD IN PHP</h2>
+<form method="post" action="upload.php" enctype="multipart/form-data">
+<label for="photo">Select photo: </label>
+<input type="file" name="photo" id="photo">
+<br/>
+<button type="submit">Upload</button>
+</form>
+</div>
+
+</body>
+</html>
