@@ -44,6 +44,7 @@ if(isset($_FILES['photo']) && $_SERVER['REQUEST_METHOD'] == "POST"){
       }else{
         //Inappropriate size.
         echo 'File size must be 2MB or less in size.';
+        return false;
       }
     }else{
       //Incorrect extension.
